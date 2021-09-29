@@ -1,3 +1,5 @@
+
+/* Embeded Font Links */
 /*
 This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fonts.com
 */
@@ -10,24 +12,88 @@ This CSS resource incorporates links to font software which is the valuable copy
   src:url("./assets/MTI-WebFonts-891162189-Ghibli-WebFonts/Fonts/1609291-Bold/4000ec69-7f7e-4e27-8967-d653460d5a9e.woff2") format("woff2"),url("./assets/MTI-WebFonts-891162189-Ghibli-WebFonts/Fonts/1609291-Bold/f8055871-23da-4952-a7e1-e2c97f7b2d2f.woff") format("woff");
 }
 
+/*Details of document
+    font: "Ghibli W01 Regular", "Ghibli W01 Bold", serif;
+    background-color: linear-gradient(#AEF8C9 0%, #BFD6FC 20%, #F2C4F8 85%);
+    navBar color: ;
+    text color: ;
+    button color: ;
+*/
+
+/* Main Body */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ghibli W01 Regular", "Ghibli W01 Bold", serif;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  
+  background: linear-gradient(#AEF8C9 0%, #BFD6FC 20%, #F2C4F8 85%);
+  
+}
+
+
+html {   
+  background: #F6F6F6;    /* <---Figure out how to fix/get ride of */
+}
+
+
+/* Text Structure */
+
+
+
+/* Sections */
+
+
+
+/* NavBar Structure */
+
+
+
+/* Button Structure */
+button {
+  width: 95%;
+  margin-top: 15px;
+  
+  
+}
+
+
+
+
+/* Secondary Layout Structures */
+
+
+
+/* Tertiary Layout Structures */
+
+
+/*Selector↓ - ↓Declaration block*/
+.collapsing-cards {
+  max-height: 0px;          /*to start out collapsed*/
+  overflow: hidden;         /*to start out collapsed*/
+  transition: all 1s ease;    /*to make it expand (gently, over 1 second).  You can play with the timing and ease to fine-tune those also (just google css transition property)*/
+  /*transition-property: max-height;        <-might need, might not, look into*/
+}
+
+.container1:hover {max-height: 500px;}   /*I think this will actually be button not container1*/
+
+
+
+
 
 * {
     box-sizing: border-box
   }
   
-  html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "Ghibli W01 Regular", "Ghibli W01 Bold", serif;
-    letter-spacing: 4px;
-    line-height: 1.6;
-    color: #666;
-    background: #F6F6F6;
-  }
+ 
   
   #root {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
+    
   }
   
   h1 {

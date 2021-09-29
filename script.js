@@ -2,8 +2,25 @@
 //helpful base code tutorial: https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/
 //Don't worry, I'm making it my own ^_~ 
 
+
+//* Films
+const filmsURL  = 'https://ghibliapi.herokuapp.com/films';
+
+fetchFilms().catch(error => console.log('Error!'));
+
+async function fetchFilms(){
+  const res = await fetch(filmsURL);
+  const filmsData = await res.json();
+  console.log(filmsData);
+  return filmsData;
+}
+
+
+
+
+
 /*
-TANIA'S CODE FOR REFERENCE---SO I CAN WRAP MY HEAD AROUND THIS
+//TANIA'S CODE FOR REFERENCE---SO I CAN WRAP MY HEAD AROUND THIS
 
 const app = document.getElementById('root');
 
@@ -50,6 +67,7 @@ request.onload = function () {
 request.send();
 */
 
+/*
 const baseURL = 'https://ghibliapi.herokuapp.com/';
 let url;
 
@@ -71,10 +89,24 @@ fetch('https://ghibliapi.herokuapp.com/films')
   });
 
 
+*/
 
 
 
+/*
 
+//* Locations
+fetch('https://ghibliapi.herokuapp.com/locations')
+.then(function(response) {                                    
+  return response.json();
+})
+.then(function(json) {                                        
+  console.log(json);
+})
+.catch(function(error) {                                      
+  console.log("Error: " + error);
+});
+*/
 
 /*
                                               STUDIO GHIBLI APP FAMILY TREE
