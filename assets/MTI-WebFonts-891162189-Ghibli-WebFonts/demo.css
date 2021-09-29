@@ -1,0 +1,8 @@
+    @font-face{
+        font-family:"Ghibli W01 Regular";
+        src:url("Fonts/1609205/74617b4c-d553-48fa-a8cc-c6cdc4ef074f.woff2") format("woff2"),url("Fonts/1609205/50e67fe3-0e4e-4b0a-a8bf-3dfd6f3aa8a8.woff") format("woff");
+    }
+    @font-face{
+        font-family:"Ghibli W01 Bold";
+        src:url("Fonts/1609291/4000ec69-7f7e-4e27-8967-d653460d5a9e.woff2") format("woff2"),url("Fonts/1609291/f8055871-23da-4952-a7e1-e2c97f7b2d2f.woff") format("woff");
+    }
