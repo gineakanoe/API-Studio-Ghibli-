@@ -37,11 +37,17 @@ header {
 }
 
 footer {
-  margin-top: 500px;
+  margin-top: 50px;
 }
 
+
+/* Images */
 img {
   margin: 20px;
+}
+
+#leaf {
+    margin-left: 40%;
 }
 
 /*
