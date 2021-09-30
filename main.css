@@ -59,11 +59,34 @@ button {
   
   
 }
-
+button:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
 
 
 
 /* Secondary Layout Structures */
+
+#heading {
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: wheat;
+}
+
+.movies {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: transparent;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
 
 
 
@@ -123,7 +146,7 @@ button {
   
   .card {
     margin: 1rem;
-    background: white;
+    background: transparent;
     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
     border-radius: 12px;
     overflow: hidden;
