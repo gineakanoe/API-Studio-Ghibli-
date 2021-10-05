@@ -17,8 +17,8 @@ async function fetchFilms(){
   const html = filmsData.map(film => {
     return `
     <div class = 'movies'>
-      <p id='heading'>Title: ${film.title}</p>
-      <p>Snippet: ${film.description}</p>
+      <p id='heading'>${film.title}</p>
+      <p>${film.description}</p>
     </div>  
     `
   })
@@ -45,7 +45,7 @@ async function fetchPeople(){
   const html = peopleData.map(people => {
     return `
     <div class = 'persons'>
-      <p id='heading'>Name: ${people.name}</p>
+      <p id='heading'>${people.name}</p>
       <p>Age: ${people.age}</p>
       <p>Hair: ${people.hair_color}</p>
       <p>Eyes: ${people.eye_color}</p>
